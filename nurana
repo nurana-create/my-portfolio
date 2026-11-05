@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello AI Native Developer</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      background: #1e60d6;
+      color: #ffffff;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.75rem, 5vw, 3rem);
+      font-weight: 700;
+    }
+
+    button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1e60d6;
+      background: #ffffff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #e8efff;
+    }
+
+    button:focus-visible {
+      outline: 3px solid #ffffff;
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+<body>
+  <h1>hello ai native developer</h1>
+  <button id="alert-btn">Click me</button>
+
+  <script>
+    document.getElementById("alert-btn").addEventListener("click", function () {
+      alert("Hello from your AI native app!");
+    });
+  </script>
+</body>
+</html>
